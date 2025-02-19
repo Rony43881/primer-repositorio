@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El sistema solar</title>
+    <style>
+        body {
+            text-align: center;
+        }
+        table {
+            width: 75%;
+            margin: 0 auto;
+            border-collapse: collapse;
+        }
+        table img {
+            width: 100px;
+            cursor: pointer;
+        }
+        iframe {
+            width: 75%;
+            height: 500px;
+            border: none;
+            margin-top: 20px;
+        }
+    </style>
+    <script>
+        function showImageInIframe(src) {
+            document.getElementById('planetFrame').src = src;
+        }
+    </script>
+</head>
+<body>
+    <h1>El sistema solar</h1>
+    <table>
+        <tr>
+            <td><img src="mercurio.jpg" onclick="showImageInIframe('mercurio.jpg')"></td>
+            <td><img src="venus.jpg" onclick="showImageInIframe('venus.jpg')"></td>
+            <td><img src="tierra.jpg" onclick="showImageInIframe('tierra.jpg')"></td>
+            <td><img src="marte.jpg" onclick="showImageInIframe('marte.jpg')"></td>
+        </tr>
+    </table>
+    <iframe id="planetFrame"></iframe>
+</body>
+</html>
