@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>McDonald's</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .colored-text:nth-child(1) { color: red; }
+        .colored-text:nth-child(2) { color: blue; }
+        .colored-text:nth-child(3) { color: green; }
+        .colored-text:nth-child(4) { color: purple; }
+        .spacer {
+            margin: 20px 0;
+        }
+        .divider {
+            border-top: 2px solid black;
+            margin: 20px 0;
+            position: relative;
+        }
+        .divider span {
+            position: absolute;
+            top: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: white;
+            padding: 0 10px;
+        }
+        iframe {
+            width: 80%;
+            height: 500px;
+            border: none;
+        }
+    </style>
+    <script>
+        function loadMcDonaldsPage() {
+            document.getElementById('iframe').src = 'https://corporate.mcdonalds.com/';
+        }
+    </script>
+</head>
+<body>
+    <h1 class="colored-text">PROGRAMACIÓN WEB I PRIM25</h1>
+    <h2 class="colored-text">Evaluación práctica Parcial 1</h2>
+    <h3 class="colored-text">Profesora: M.C. Imelda Deyanira Hernández Martinez</h3>
+    <h4 class="colored-text">Alumno: Ronaldo Vega Reyes</h4>
+
+    <div class="spacer">disfruta MC Donalds</div>
+    <div class="spacer">
+        <img src="logo.jpg" alt="McDonald's Logo" width="100" onclick="loadMcDonaldsPage()">
+    </div>
+    <div class="spacer">
+        <iframe id="iframe" src=""></iframe>
+    </div>
+    <div class="spacer">
+        <img src="Hamburguesa.jpg" alt="Hamburguesa">
+    </div>
+    <div class="spacer">
+        <img src="refresco.jpg" alt="Refresco">
+    </div>
+    <div class="spacer">
+        <img src="papas.jpg" alt="Papas">
+    </div>
+
+    <div class="divider"><span>Universidad Politécnica de San Luis Potosí</span></div>
+
+    <address>
+        McDonald's Centro<br>
+        Calle Principal 123, Ciudad, País
+    </address>
+</body>
+</html>
