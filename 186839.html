@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volkswagen Potosina - Compras Online</title>
+    <style>
+    body {
+    font-family: sans-serif;
+    background-color: blue;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    }
+
+
+    h1, h2, h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    }
+
+    .section {
+    background-color: #f0f8ff; 
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    }
+
+    label, input, select, button {
+    margin-right: 10px;
+    margin-bottom: 5px;
+    }
+
+    input, select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    }
+
+    input[type="checkbox"] {
+    margin-right: 5px;
+    }
+
+    button {
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    }
+
+    button:hover {
+    background-color: lightblue;
+    }
+
+    footer {
+    text-align: center;
+    margin-top: 20px;
+    }
+    </style>
+</head>
+<body>
+ 
+        <h1>Volkswagen Potosina</h1>
+        <h2>Compras online</h2>
+        <form class="section">
+            <fieldset>
+                <legend><h3>Información general del cliente</h3></legend>
+             
+                <br>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" placeholder="Nombre">
+                <input type="text" placeholder="Apellido paterno">
+                <input type="text" placeholder="Apellido materno">
+                
+                
+                <br>
+                <label for="usuario">Nombre de usuario</label>
+                <input type="text" id="usuario" placeholder="Usuario">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Password">
+                <label for="fecha">Fecha de registro</label>
+                <input type="date" id="fecha" placeholder="fecha">
+            </fieldset>
+
+        </form>
+
+        <form class="section">
+            <fieldset>
+                <legend>
+                    <h3>Datos para facturar</h3>  
+                </legend>
+                <label for="pais">País</label>
+                <select name="pais">
+                    <option>País</option>
+                    <option>México</option>
+                    <option>Canadá</option>
+                    <option>Reino Unido</option>
+                </select>
+                <label for="ciudad">Ciudad</label>
+                <select name="ciudad">
+                    <option>Ciudad</option>
+                    <option>San Luis Potosí</option>
+                    <option>Monterrey</option>
+                    <option>Cd. Valles</option>
+                </select>
+                <label for="Calle">Calle</label>
+                <input type="text" placeholder="Calle">
+                <label for="Número de casa">Num. Casa</label>
+                <input type="number" placeholder="Número de casa">
+                <label for="Colonia">Colonia</label>
+                <input type="text" placeholder="Colonia">
+                <label for="E-mail">E-mail</label>
+                <input type="email" placeholder="E-mail">
+                <label for="Número exterior">Num. Ext</label>
+                <input type="number" placeholder="Número exterior">
+                <label for="R.F.C.">R.F.C</label>
+                <input type="file" placeholder="R.F.C.">
+                <label for="C.P.">C.P</label>
+                <input type="number" placeholder="C.P.">
+                <label><input type="checkbox"> Acepto términos y condiciones</label>
+                <button>Enviar</button>
+                <button>Restablecer</button>
+            </fieldset>
+        </form>
+        
+
+        
+
+    <footer>Febrero 2025, SLP.</footer>
+</body>
+</html>
