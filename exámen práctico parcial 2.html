@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Examen práctico Parcial 2</title>
+  <link rel="stylesheet" href="exámen práctico parcial 2.css">
+</head>
+
+<body>
+
+  <h1>Examen práctico Parcial 2</h1>
+  <h2>Nombre del alumno(a): </h2>
+  <h3>Ronaldo Vega Reyes 186839</h2>
+  <input type="button" id="mostrar" value="Ocultar/Mostrar Galería">
+
+  <div class="galeria">
+    <div class="imagen">
+      <img src="1.png" alt="Paisaje 1">
+    </div>
+    <div class="imagen">
+      <img src="2.png" alt="Paisaje 2">
+    </div>
+    <div class="imagen">
+      <img src="3.png" alt="Paisaje 3">
+    </div>
+    <div class="imagen">
+      <img src="4.png" alt="Paisaje 4">
+    </div>
+  </div>
+
+  <script>
+    const boton = document.getElementById('mostrar');
+    const galeria = document.querySelector('.galeria');
+    boton.addEventListener('mouseover', () => {
+      galeria.classList.add('ocultar-imagenes');
+    });
+    boton.addEventListener('mouseout', () => {
+      galeria.classList.remove('ocultar-imagenes');
+    });
+  </script>
+
+</body>
+
+</html>
