@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Diagnóstico de Videojuegos</title>
+  <link rel="stylesheet" href="estilo.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+  <h1>Formulario de Diagnóstico: Videojuegos</h1>
+  <form id="quizForm">
+    <div class="question">
+      <p>1. ¿Cuál es la consola más vendida de la historia?</p>
+      <label><input type="radio" name="q1" value="PlayStation 2"> PlayStation 2</label><br>
+      <label><input type="radio" name="q1" value="Xbox 360"> Xbox 360</label><br>
+      <label><input type="radio" name="q1" value="Nintendo Switch"> Nintendo Switch</label>
+    </div>
+
+    <div class="question">
+      <p>2. ¿Qué juego introdujo el concepto de mundo abierto en 3D?</p>
+      <label><input type="radio" name="q2" value="GTA III"> GTA III</label><br>
+      <label><input type="radio" name="q2" value="Super Mario 64"> Super Mario 64</label><br>
+      <label><input type="radio" name="q2" value="Zelda Ocarina of Time"> Zelda Ocarina of Time</label>
+    </div>
+
+    <div class="question">
+      <p>3. ¿Qué empresa creó el juego *Fortnite*?</p>
+      <label><input type="radio" name="q3" value="Epic Games"> Epic Games</label><br>
+      <label><input type="radio" name="q3" value="Activision"> Activision</label><br>
+      <label><input type="radio" name="q3" value="Ubisoft"> Ubisoft</label>
+    </div>
+
+    <button type="button" onclick="evaluar()">Evaluar</button>
+  </form>
+
+  <div class="result" id="resultado"></div>
+
+  <div id="chart-container">
+    <canvas id="graficoResultados"></canvas>
+  </div>
+
+  <button onclick="generarPDF()">Descargar PDF</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
