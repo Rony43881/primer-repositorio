@@ -101,6 +101,32 @@
             <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
             <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
         </ul>
+	<!-- Blog de Preguntas y Respuestas -->
+<link rel="stylesheet" href="blog.css">
+<div id="blog-preguntas">
+    <h3>Blog de Preguntas y Respuestas</h3>
+    <form id="formPregunta">
+        <label for="nombreUsuario">Nombre:</label><br>
+        <input type="text" id="nombreUsuario" required><br>
+        <label for="pregunta">Pregunta:</label><br>
+        <textarea id="pregunta" rows="4" required></textarea><br>
+        <button type="submit">Publicar</button>
+    </form>
+    <div id="listaPreguntas"></div>
+</div>
+
+<!-- Chatbot integrado -->
+<div id="chatbot">
+    <h3>Asistente Virtual</h3>
+    <iframe
+        src="https://landbot.online/v3/H-2930663-M761BAUNLME21TWS/index.html"
+        style="width:100%;height:500px;border:none;border-radius:8px;"
+        title="Chatbot Universo Geek"
+        allow="camera; microphone">
+    </iframe>
+</div>
+
+<script src="blog.js"></script>
     </section>
 
     <footer>
