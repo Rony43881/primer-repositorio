@@ -147,3 +147,49 @@ footer {
 #ayuda ul li a:hover {
     text-decoration: underline;
 }
+
+/* Blog de Preguntas y Respuestas */
+#blog-preguntas {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #fdfdfd;
+    border: 2px solid #f08080;
+    border-radius: 8px;
+}
+
+#formPregunta input,
+#formPregunta textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#formPregunta button {
+    background-color: #f08080;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#formPregunta button:hover {
+    background-color: #d06060;
+}
+
+#listaPreguntas {
+    margin-top: 20px;
+}
+
+.pregunta-publicada {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+}
+
+/* Chatbot */
+#chatbot iframe {
+    margin-top: 20px;
+    border-radius: 8px;
+}
