@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculadora de Estacionamiento</title>
+  <link rel="stylesheet" href="EPP3.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Calculadora de Pago de Estacionamiento</h1>
+    <form id="parking-form">
+      <label for="hours">Número de horas:</label>
+      <input type="number" id="hours" name="hours" min="1" required>
+      <label for="car-type">Tipo de automóvil:</label>
+      <select id="car-type" name="car-type" required>
+        <option value="" disabled selected>Seleccione un tipo de auto</option>
+        <option value="chico">Auto chico</option>
+        <option value="camioneta">Camioneta</option>
+        <option value="camion">Camión</option>
+      </select>
+      <input type="button" value="Calcular total a pagar" onclick="calcularPago()">
+    </form>
+    <div id="resultado"></div>
+  </div>
+  <script src="EPP3.js"></script>
+</body>
+</html>
