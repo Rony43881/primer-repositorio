@@ -6,38 +6,50 @@
     <link rel="stylesheet" href="diagnostico.css">
 </head>
 <body>
-    <h1>Cuestionario de Diagnóstico - Universo Geek</h1>
-    <form id="cuestionario">
-        <label>1. ¿Cuál es la editorial que publica Spider-Man?</label><br>
-        <input type="radio" name="q1" value="1"> Marvel<br>
-        <input type="radio" name="q1" value="0"> DC<br>
-        <input type="radio" name="q1" value="0"> Image Comics<br><br>
+    <div class="container">
+        <h1>🦸 Cuestionario de Diagnóstico - Universo Geek</h1>
+        <form id="cuestionario">
+            <div class="pregunta">
+                <label for="q1">1. ¿Cuál es la editorial que publica Spider-Man?</label>
+                <input type="radio" name="q1" value="1"> Marvel
+                <input type="radio" name="q1" value="0"> DC
+                <input type="radio" name="q1" value="0"> Image Comics
+            </div>
 
-        <label>2. ¿Qué personaje pertenece a DC Comics?</label><br>
-        <input type="radio" name="q2" value="1"> Batman<br>
-        <input type="radio" name="q2" value="0"> Iron Man<br>
-        <input type="radio" name="q2" value="0"> Deadpool<br><br>
+            <div class="pregunta">
+                <label for="q2">2. ¿Qué personaje pertenece a DC Comics?</label>
+                <input type="radio" name="q2" value="1"> Batman
+                <input type="radio" name="q2" value="0"> Iron Man
+                <input type="radio" name="q2" value="0"> Deadpool
+            </div>
 
-        <label>3. ¿Qué es una "novela gráfica"?</label><br>
-        <input type="radio" name="q3" value="1"> Una historia completa publicada en formato de libro<br>
-        <input type="radio" name="q3" value="0"> Un cómic de humor<br>
-        <input type="radio" name="q3" value="0"> Un videojuego de aventuras<br><br>
+            <div class="pregunta">
+                <label for="q3">3. ¿Qué es una "novela gráfica"?</label>
+                <input type="radio" name="q3" value="1"> Una historia completa publicada en formato de libro
+                <input type="radio" name="q3" value="0"> Un cómic de humor
+                <input type="radio" name="q3" value="0"> Un videojuego de aventuras
+            </div>
 
-        <label>4. ¿Quién creó a los X-Men?</label><br>
-        <input type="radio" name="q4" value="1"> Stan Lee<br>
-        <input type="radio" name="q4" value="0"> Alan Moore<br>
-        <input type="radio" name="q4" value="0"> Todd McFarlane<br><br>
+            <div class="pregunta">
+                <label for="q4">4. ¿Quién creó a los X-Men?</label>
+                <input type="radio" name="q4" value="1"> Stan Lee
+                <input type="radio" name="q4" value="0"> Alan Moore
+                <input type="radio" name="q4" value="0"> Todd McFarlane
+            </div>
 
-        <label>5. ¿Qué significa "manga"?</label><br>
-        <input type="radio" name="q5" value="1"> Cómic japonés<br>
-        <input type="radio" name="q5" value="0"> Comida china<br>
-        <input type="radio" name="q5" value="0"> Película de acción<br><br>
+            <div class="pregunta">
+                <label for="q5">5. ¿Qué significa "manga"?</label>
+                <input type="radio" name="q5" value="1"> Cómic japonés
+                <input type="radio" name="q5" value="0"> Comida china
+                <input type="radio" name="q5" value="0"> Película de acción
+            </div>
 
-        <button type="button" onclick="evaluar()">Enviar</button>
-    </form>
+            <button type="button" class="btn" onclick="evaluar()">Enviar respuestas</button>
+        </form>
 
-    <div id="resultado"></div>
-    <button id="btnPDF" style="display:none;" onclick="generarPDF()">Descargar PDF</button>
+        <div id="resultado" class="resultado"></div>
+        <button id="btnPDF" class="btn-pdf" style="display:none;" onclick="mostrarPDF()">Descargar resultados en PDF</button>
+    </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
     <script src="diagnostico.js"></script>
